@@ -205,6 +205,7 @@ raster_lines rasterise(const std::vector<edge>& edges)
                 {
                     r.e = edge->e.x;
                     ret[y].emplace_back(r);
+                    added_start = false;
                     pushed = true;
                 }
             }
